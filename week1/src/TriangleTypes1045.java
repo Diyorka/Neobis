@@ -9,8 +9,7 @@ public class TriangleTypes1045 {
         double c1 = Double.parseDouble(mas[2]);
 
         double a = Math.max(a1,Math.max(b1,c1));
-        double b = b1;
-        double c = c1;
+        double b,c;
 
         if(a==a1){
             b=b1;
