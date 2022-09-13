@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7baf4216-0115-47b0-9893-cd53a0cce2a6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/BanknotesAndCoins1021.java" afterDir="false" />
+    <list default="true" id="7baf4216-0115-47b0-9893-cd53a0cce2a6" name="Changes" comment="1021 solved">
       <change afterPath="$PROJECT_DIR$/src/TriangleTypes1045.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -39,7 +38,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager" selected="Application.BanknotesAndCoins1021">
+  <component name="RunManager" selected="Application.TriangleTypes1045">
     <configuration name="Banknotes1018" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Banknotes1018" />
       <module name="week1" />
@@ -63,8 +62,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BanknotesAndCoins1021" />
         <item itemvalue="Application.TriangleTypes1045" />
+        <item itemvalue="Application.BanknotesAndCoins1021" />
         <item itemvalue="Application.Banknotes1018" />
       </list>
     </recent_temporary>
@@ -81,8 +80,16 @@
       <option name="presentableId" value="Default" />
       <updated>1662994595173</updated>
       <workItem from="1662994597650" duration="2979000" />
-      <workItem from="1662999738049" duration="5644000" />
+      <workItem from="1662999738049" duration="7785000" />
     </task>
+    <task id="LOCAL-00001" summary="1021 solved">
+      <created>1663037988921</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1663037988921</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,5 +105,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1021 solved" />
+    <option name="LAST_COMMIT_MESSAGE" value="1021 solved" />
   </component>
 </project>
