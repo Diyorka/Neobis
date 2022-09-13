@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class TriangleTypes1045 {
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
         String[] mas = sc.nextLine().split(" ");
         double a1 = Double.parseDouble(mas[0]);
