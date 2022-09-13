@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7baf4216-0115-47b0-9893-cd53a0cce2a6" name="Changes" comment="1045 c" />
+    <list default="true" id="7baf4216-0115-47b0-9893-cd53a0cce2a6" name="Changes" comment="out commit">
+      <change afterPath="$PROJECT_DIR$/src/GameTimeWithMinutes1047.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,7 +38,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager" selected="Application.TriangleTypes1045">
+  <component name="RunManager" selected="Application.GameTimeWithMinutes1047">
     <configuration name="Banknotes1018" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Banknotes1018" />
       <module name="week1" />
@@ -50,6 +53,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GameTimeWithMinutes1047" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GameTimeWithMinutes1047" />
+      <module name="week1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TriangleTypes1045" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TriangleTypes1045" />
       <module name="week1" />
@@ -59,6 +69,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GameTimeWithMinutes1047" />
         <item itemvalue="Application.TriangleTypes1045" />
         <item itemvalue="Application.BanknotesAndCoins1021" />
         <item itemvalue="Application.Banknotes1018" />
@@ -114,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663042010708</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="out commit">
+      <created>1663042432546</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1663042432546</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +153,7 @@
     <MESSAGE value="1021 solved" />
     <MESSAGE value="1045 solved" />
     <MESSAGE value="1045 c" />
-    <option name="LAST_COMMIT_MESSAGE" value="1045 c" />
+    <MESSAGE value="out commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="out commit" />
   </component>
 </project>
