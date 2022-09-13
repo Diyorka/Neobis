@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7baf4216-0115-47b0-9893-cd53a0cce2a6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Banknotes1018.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/week1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BanknotesAndCoins1021.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TriangleTypes1045.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +39,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.BanknotesAndCoins1021">
     <configuration name="Banknotes1018" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Banknotes1018" />
       <module name="week1" />
@@ -48,8 +47,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BanknotesAndCoins1021" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BanknotesAndCoins1021" />
+      <module name="week1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TriangleTypes1045" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TriangleTypes1045" />
+      <module name="week1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BanknotesAndCoins1021" />
+        <item itemvalue="Application.TriangleTypes1045" />
         <item itemvalue="Application.Banknotes1018" />
       </list>
     </recent_temporary>
@@ -66,6 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1662994595173</updated>
       <workItem from="1662994597650" duration="2979000" />
+      <workItem from="1662999738049" duration="5644000" />
     </task>
     <servers />
   </component>
