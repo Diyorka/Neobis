@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7baf4216-0115-47b0-9893-cd53a0cce2a6" name="Changes" comment="Logical Sequence 2 1145 done">
+    <list default="true" id="7baf4216-0115-47b0-9893-cd53a0cce2a6" name="Changes" comment="Grenais1131 done">
       <change afterPath="$PROJECT_DIR$/src/ColumnInArray_1182.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Grenais1131.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +97,7 @@
       <updated>1662994595173</updated>
       <workItem from="1662994597650" duration="2979000" />
       <workItem from="1662999738049" duration="8103000" />
-      <workItem from="1663072021948" duration="9761000" />
+      <workItem from="1663072021948" duration="10679000" />
     </task>
     <task id="LOCAL-00001" summary="1021 solved">
       <created>1663037988921</created>
@@ -177,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663136896345</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Grenais1131 done">
+      <created>1663159207994</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1663159207994</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,6 +209,7 @@
     <MESSAGE value="WeightedAverage1079 done" />
     <MESSAGE value="1098 done" />
     <MESSAGE value="Logical Sequence 2 1145 done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Logical Sequence 2 1145 done" />
+    <MESSAGE value="Grenais1131 done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Grenais1131 done" />
   </component>
 </project>
