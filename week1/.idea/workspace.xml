@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7baf4216-0115-47b0-9893-cd53a0cce2a6" name="Changes" comment="1098 done">
-      <change afterPath="$PROJECT_DIR$/src/LogicalSequence2_1145.java" afterDir="false" />
+    <list default="true" id="7baf4216-0115-47b0-9893-cd53a0cce2a6" name="Changes" comment="Logical Sequence 2 1145 done">
+      <change afterPath="$PROJECT_DIR$/src/ColumnInArray_1182.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Grenais1131.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,9 +39,16 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager" selected="Application.LogicalSequence2_1145">
-    <configuration name="GameTimeWithMinutes1047" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GameTimeWithMinutes1047" />
+  <component name="RunManager" selected="Application.Grenais1131">
+    <configuration name="ColumnInArray_1182" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ColumnInArray_1182" />
+      <module name="week1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Grenais1131" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Grenais1131" />
       <module name="week1" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -60,13 +68,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TriangleTypes1045" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TriangleTypes1045" />
-      <module name="week1" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="WeightedAverage1079" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="WeightedAverage1079" />
       <module name="week1" />
@@ -76,11 +77,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Grenais1131" />
+        <item itemvalue="Application.ColumnInArray_1182" />
         <item itemvalue="Application.LogicalSequence2_1145" />
         <item itemvalue="Application.SequenceIJ4_1098" />
         <item itemvalue="Application.WeightedAverage1079" />
-        <item itemvalue="Application.GameTimeWithMinutes1047" />
-        <item itemvalue="Application.TriangleTypes1045" />
       </list>
     </recent_temporary>
   </component>
@@ -97,7 +98,7 @@
       <updated>1662994595173</updated>
       <workItem from="1662994597650" duration="2979000" />
       <workItem from="1662999738049" duration="8103000" />
-      <workItem from="1663072021948" duration="4613000" />
+      <workItem from="1663072021948" duration="9761000" />
     </task>
     <task id="LOCAL-00001" summary="1021 solved">
       <created>1663037988921</created>
@@ -169,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663136178483</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Logical Sequence 2 1145 done">
+      <created>1663136896345</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1663136896345</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,6 +202,7 @@
     <MESSAGE value="1047 done" />
     <MESSAGE value="WeightedAverage1079 done" />
     <MESSAGE value="1098 done" />
-    <option name="LAST_COMMIT_MESSAGE" value="1098 done" />
+    <MESSAGE value="Logical Sequence 2 1145 done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Logical Sequence 2 1145 done" />
   </component>
 </project>
