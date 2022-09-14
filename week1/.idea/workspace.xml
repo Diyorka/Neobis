@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7baf4216-0115-47b0-9893-cd53a0cce2a6" name="Changes" comment="out commit">
-      <change afterPath="$PROJECT_DIR$/src/GameTimeWithMinutes1047.java" afterDir="false" />
+    <list default="true" id="7baf4216-0115-47b0-9893-cd53a0cce2a6" name="Changes" comment="1047 done">
+      <change afterPath="$PROJECT_DIR$/src/WeightedAverage1079.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +38,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager" selected="Application.GameTimeWithMinutes1047">
+  <component name="RunManager" selected="Application.WeightedAverage1079">
     <configuration name="Banknotes1018" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Banknotes1018" />
       <module name="week1" />
@@ -67,8 +67,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WeightedAverage1079" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="WeightedAverage1079" />
+      <module name="week1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WeightedAverage1079" />
         <item itemvalue="Application.GameTimeWithMinutes1047" />
         <item itemvalue="Application.TriangleTypes1045" />
         <item itemvalue="Application.BanknotesAndCoins1021" />
@@ -89,6 +97,7 @@
       <updated>1662994595173</updated>
       <workItem from="1662994597650" duration="2979000" />
       <workItem from="1662999738049" duration="8103000" />
+      <workItem from="1663072021948" duration="2578000" />
     </task>
     <task id="LOCAL-00001" summary="1021 solved">
       <created>1663037988921</created>
@@ -132,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663042432546</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="1047 done">
+      <created>1663066890114</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1663066890114</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +170,7 @@
     <MESSAGE value="1045 solved" />
     <MESSAGE value="1045 c" />
     <MESSAGE value="out commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="out commit" />
+    <MESSAGE value="1047 done" />
+    <option name="LAST_COMMIT_MESSAGE" value="1047 done" />
   </component>
 </project>
