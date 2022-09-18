@@ -2,15 +2,17 @@ package part2;
 
 public class Buyer {
     private int id;
-    private String fullName;
+    private String firstName;
+    private String lastName;
     private String phoneNumber;
 
     public Buyer() {
     }
 
-    public Buyer(int id, String fullName, String phoneNumber) {
+    public Buyer(int id, String firstName, String lastName, String phoneNumber) {
         this.id = id;
-        this.fullName = fullName;
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.phoneNumber = phoneNumber;
     }
 
@@ -22,12 +24,20 @@ public class Buyer {
         this.id = id;
     }
 
-    public String getFullName() {
-        return fullName;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public String getPhoneNumber() {
@@ -42,7 +52,8 @@ public class Buyer {
     public String toString() {
         return "Buyer{" +
                 "id=" + id +
-                ", fullName='" + fullName + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
                 ", phoneNumber='" + phoneNumber + '\'' +
                 '}';
     }
