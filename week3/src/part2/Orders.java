@@ -1,16 +1,16 @@
 package part2;
 
 
-public class Order {
+public class Orders {
     private int id;
     private int laptopId;
     private int buyerId;
     private String orderDate;
 
-    public Order() {
+    public Orders() {
     }
 
-    public Order(int id, int laptopId, int buyerId, String orderDate) {
+    public Orders(int id, int laptopId, int buyerId, String orderDate) {
         this.id = id;
         this.laptopId = laptopId;
         this.buyerId = buyerId;
