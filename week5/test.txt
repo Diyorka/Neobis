@@ -1,0 +1,16 @@
+To get connection with DB I used class Connection and DriverManager,
+I saved my connection data in java class ConnectionData.java
+Also I saved table and column names in java class TableColumnNames.java
+
+Insert new data using class Laptop and PrepareStatement
+Just used getters and setters and wrote SQL query
+
+Select data using SQL query and PrepareStatement
+
+Change data using SQL query with "WHERE", PrepareStatement
+
+Delete data using SQL query with "DELETE FROM", PrepareStatement
+
+
+
+Hope you understand my code :)
