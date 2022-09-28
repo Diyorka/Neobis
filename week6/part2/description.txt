@@ -1,0 +1,81 @@
+(1)
+1. Adding a buyer
+2. POST /buyers/new
+3.
+{
+    "firstName": "Nikolay",
+    "lastName": "Goloshyapov",
+    "phoneNumber": "555777888"
+}
+4. None(200 OK)
+
+----------------------------------
+(2)
+1. Getting all buyers
+2. GET /buyers
+3. No parameters
+4.
+[
+    {
+        "id": 1,
+        "firstName": "Diyorka",
+        "lastName": "Umurzakov",
+        "phoneNumber": "557001122"
+    },
+    {
+        "id": 2,
+        "firstName": "Di",
+        "lastName": "Umzkv",
+        "phoneNumber": "555284844"
+    },
+    {
+        "id": 3,
+        "firstName": "Aziz",
+        "lastName": "Solibaev",
+        "phoneNumber": "29948248"
+    },
+    {
+        "id": 5,
+        "firstName": "Nikolay",
+        "lastName": "Goloshyapov",
+        "phoneNumber": "555777888"
+    }
+]
+
+----------------------------------
+(3)
+1. Getting buyer by id
+2. GET /buyers/1
+3. No parameters
+4.
+{
+    "id": 1,
+    "firstName": "Diyorka",
+    "lastName": "Umurzakov",
+    "phoneNumber": "557001122"
+}
+
+----------------------------------
+(4)
+1. Updating buyer info
+2. PUT /buyers/update/1
+3.
+{
+    "firstName": "Diyor",
+    "lastName": "Umurzakov",
+    "phoneNumber": "14125215"
+}
+4.
+{
+    "id": 1,
+    "firstName": "Diyor",
+    "lastName": "Umurzakov",
+    "phoneNumber": "14125215"
+}
+
+----------------------------------
+(5)
+1. Deleting a buyer
+2. DELETE /buyers/delete/5
+3. No parameters
+4. None(200 OK)
