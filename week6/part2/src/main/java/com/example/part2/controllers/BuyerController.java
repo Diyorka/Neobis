@@ -34,7 +34,10 @@ public class BuyerController {
 
     @PutMapping("/update/{id}")
     public Buyer updateBuyer(@PathVariable int id, Buyer newBuyer){
-        newBuyer.setId(id);
+        Buyer buyer = buyerRepository.findById(id).orElse(null);
+        buyer.setFirstName(newBuyer.getFirstName());
+        buyer.setLastName(newBuyer.getLastName());
+        buyer.setPhoneNumber(newBuyer.getPhoneNumber());
         return buyerRepository.save(newBuyer);
     }
 
