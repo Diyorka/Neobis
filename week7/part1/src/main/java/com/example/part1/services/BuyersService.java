@@ -1,7 +1,7 @@
 package com.example.part1.services;
 
 import com.example.part1.models.Buyer;
-import com.example.part1.repositories.BuyerRepository;
+import com.example.part1.repositories.BuyersRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -11,16 +11,16 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class BuyerService {
-    private final BuyerRepository buyerRepository;
+public class BuyersService {
+    private final BuyersRepository buyerRepository;
 
     @Autowired
-    public BuyerService(BuyerRepository buyerRepository) {
+    public BuyersService(BuyersRepository buyerRepository) {
         this.buyerRepository = buyerRepository;
     }
 
-    public List<Buyer> findAll(){
-        return buyerRepository.findAll();
+    public ResponseEntity<List<Buyer>> findAll(){
+        return new ResponseEntity<>(buyerRepository.findAll(), HttpStatus.OK);
     }
 
     public ResponseEntity<?> findById(int id){
@@ -55,8 +55,12 @@ public class BuyerService {
         if(buyer.isEmpty())
             return new ResponseEntity<>("Buyer wasn't found!", HttpStatus.BAD_REQUEST);
 
-        buyerRepository.deleteById(id);
-        return new ResponseEntity<>("Buyer was successfully deleted!", HttpStatus.OK);
+        try {
+            buyerRepository.deleteById(id);
+            return new ResponseEntity<>("Buyer was successfully deleted!", HttpStatus.OK);
+        }catch (Exception e){
+            return new ResponseEntity<>("Buyer wasn't deleted!", HttpStatus.BAD_REQUEST);
+        }
     }
 
 }

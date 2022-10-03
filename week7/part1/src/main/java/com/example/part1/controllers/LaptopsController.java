@@ -1,9 +1,8 @@
 package com.example.part1.controllers;
 
 import com.example.part1.models.Laptop;
-import com.example.part1.services.LaptopService;
+import com.example.part1.services.LaptopsService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,18 +10,18 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/laptops")
-public class LaptopController {
-    private final LaptopService laptopService;
+public class LaptopsController {
+    private final LaptopsService laptopService;
 
     @Autowired
-    public LaptopController(LaptopService laptopService) {
+    public LaptopsController(LaptopsService laptopService) {
         this.laptopService = laptopService;
     }
 
 
     @GetMapping
     public ResponseEntity<List<Laptop>> getLaptops(){
-        return new ResponseEntity<>(laptopService.findAll(), HttpStatus.OK);
+        return laptopService.findAll();
     }
 
     @GetMapping("/{id}")

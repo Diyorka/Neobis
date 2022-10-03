@@ -1,7 +1,7 @@
 package com.example.part1.services;
 
 import com.example.part1.models.Laptop;
-import com.example.part1.repositories.LaptopRepository;
+import com.example.part1.repositories.LaptopsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -11,16 +11,16 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class LaptopService {
-    private final LaptopRepository laptopRepository;
+public class LaptopsService {
+    private final LaptopsRepository laptopRepository;
 
     @Autowired
-    public LaptopService(LaptopRepository laptopRepository) {
+    public LaptopsService(LaptopsRepository laptopRepository) {
         this.laptopRepository = laptopRepository;
     }
 
-    public List<Laptop> findAll(){
-        return laptopRepository.findAll();
+    public ResponseEntity<List<Laptop>> findAll(){
+        return new ResponseEntity<>(laptopRepository.findAll(), HttpStatus.OK);
     }
 
     public ResponseEntity<?> findById(int id){
@@ -55,8 +55,12 @@ public class LaptopService {
         if(laptop.isEmpty())
             return new ResponseEntity<>("Laptop wasn't found!", HttpStatus.BAD_REQUEST);
 
-        laptopRepository.deleteById(id);
-        return new ResponseEntity<>("Laptop was successfully deleted!", HttpStatus.OK);
+        try {
+            laptopRepository.deleteById(id);
+            return new ResponseEntity<>("Laptop was successfully deleted!", HttpStatus.OK);
+        }catch (Exception e){
+            return new ResponseEntity<>("Laptop wasn't deleted!", HttpStatus.BAD_REQUEST);
+        }
     }
 
 }

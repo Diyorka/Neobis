@@ -1,0 +1,46 @@
+package com.example.part1.controllers;
+
+import com.example.part1.models.Order;
+import com.example.part1.services.OrdersService;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@RestController
+@RequestMapping("/orders")
+public class OrdersController {
+    private final OrdersService orderService;
+
+
+    public OrdersController(OrdersService orderService) {
+        this.orderService = orderService;
+    }
+
+    @GetMapping
+    public ResponseEntity<List<Order>> getOrders(){
+        return orderService.findAll();
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<?> getOrderById(@PathVariable int id){
+        return orderService.findById(id);
+    }
+
+    @PostMapping("/new")
+    public ResponseEntity<String> addOrder(@RequestParam int laptopId,
+                                           @RequestParam int buyerId,
+                                           @RequestParam String orderDate){
+        return orderService.addOrder(laptopId, buyerId, orderDate);
+    }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<String> updateOrder(@PathVariable int id,  Order newOrder) {
+        return orderService.updateOrder(id, newOrder);
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<String> deleteOrder(@PathVariable int id){
+        return orderService.deleteOrder(id);
+    }
+}

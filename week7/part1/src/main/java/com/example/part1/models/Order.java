@@ -4,9 +4,10 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "Orders")
-public class Orders {
+public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private int id;
 
     @ManyToOne
@@ -20,10 +21,9 @@ public class Orders {
     @Column(name = "orderDate")
     private String orderDate;
 
-    public Orders(){}
+    public Order(){}
 
-    public Orders(int id, Laptop laptop, Buyer buyer, String orderDate) {
-        this.id = id;
+    public Order(Laptop laptop, Buyer buyer, String orderDate) {
         this.laptop = laptop;
         this.buyer = buyer;
         this.orderDate = orderDate;

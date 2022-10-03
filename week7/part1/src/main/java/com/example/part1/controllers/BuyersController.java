@@ -1,7 +1,7 @@
 package com.example.part1.controllers;
 
 import com.example.part1.models.Buyer;
-import com.example.part1.services.BuyerService;
+import com.example.part1.services.BuyersService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -11,18 +11,17 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/buyers")
-public class BuyerController {
-    private final BuyerService buyerService;
+public class BuyersController {
+    private final BuyersService buyerService;
 
     @Autowired
-    public BuyerController(BuyerService buyerService) {
+    public BuyersController(BuyersService buyerService) {
         this.buyerService = buyerService;
     }
 
     @GetMapping()
     public ResponseEntity<List<Buyer>> getAllBuyers(){
-        List<Buyer> buyers = buyerService.findAll();
-        return new ResponseEntity<>(buyers, HttpStatus.OK);
+        return buyerService.findAll();
     }
 
     @GetMapping("/{id}")
