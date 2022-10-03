@@ -1,6 +1,6 @@
-package com.example.part2.repositories;
+package com.example.part1.repositories;
 
-import com.example.part2.models.Orders;
+import com.example.part1.models.Orders;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

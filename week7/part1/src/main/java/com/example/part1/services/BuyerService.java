@@ -1,8 +1,7 @@
-package com.example.part2.services;
+package com.example.part1.services;
 
-import com.example.part2.models.Buyer;
-import com.example.part2.models.Laptop;
-import com.example.part2.repositories.BuyerRepository;
+import com.example.part1.models.Buyer;
+import com.example.part1.repositories.BuyerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
