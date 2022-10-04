@@ -51,14 +51,16 @@ public class OrdersService {
         }
 
 
-    public ResponseEntity<String> updateOrder(int id, Order newOrder){
-        Optional<Order> order = ordersRepository.findById(id);
-        if (order.isEmpty())
-            return new ResponseEntity<>("Order wasn't found!", HttpStatus.BAD_REQUEST);
+    public ResponseEntity<String> updateOrder(int id, int laptopId, int buyerId, String orderDate){
+        Optional<Laptop> laptop = laptopsRepository.findById(laptopId);
+        Optional<Buyer> buyer = buyersRepository.findById(buyerId);
+        if(laptop.isEmpty() || buyer.isEmpty())
+            return new ResponseEntity<>("Laptop or Buyer wasn't found!", HttpStatus.BAD_REQUEST);
 
-        newOrder.setId(order.get().getId());
-        ordersRepository.save(newOrder);
-        return new ResponseEntity<>("Order was updated!", HttpStatus.OK);
+        Order order = new Order(laptop.get(), buyer.get(), orderDate);
+        order.setId(id);
+        ordersRepository.save(order);
+        return new ResponseEntity<>("Order was successfully saved!", HttpStatus.OK);
     }
 
     public ResponseEntity<String> deleteOrder(int id){
