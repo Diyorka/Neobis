@@ -9,11 +9,12 @@ CREATE TABLE Laptop(
       price int check(price>0) NOT NULL
 );
 
-CREATE TABLE Phone(
+CREATE TABLE Worker(
     id int AUTO_INCREMENT PRIMARY KEY,
-    manufacturer varchar(50) NOT NULL,
-    model varchar (50) NOT NULL,
-    price int check(price>0) NOT NULL
+    firstName varchar(50) NOT NULL,
+    lastName varchar (50) NOT NULL,
+    phoneNumber varchar (50) NOT NULL,
+    position varchar (50) NOT NULL
 );
 
 CREATE TABLE Buyer(
