@@ -26,7 +26,7 @@ public class BuyersService {
     public ResponseEntity<?> findById(int id){
         Optional<Buyer> buyer = buyerRepository.findById(id);
         if(buyer.isEmpty())
-            return new ResponseEntity<>("Laptop wasn't found!", HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>("Laptop wasn't found!", HttpStatus.NOT_FOUND);
 
         return new ResponseEntity<>(buyer.get(), HttpStatus.OK);
     }
@@ -43,7 +43,7 @@ public class BuyersService {
     public ResponseEntity<String> updateBuyer(int id, Buyer newBuyer){
         Optional<Buyer> buyer = buyerRepository.findById(id);
         if(buyer.isEmpty())
-            return new ResponseEntity<>("Buyer wasn't found!", HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>("Buyer wasn't found!", HttpStatus.NOT_FOUND);
 
         newBuyer.setId(buyer.get().getId());
         buyerRepository.save(newBuyer);
@@ -53,7 +53,7 @@ public class BuyersService {
     public ResponseEntity<String> deleteById(int id){
         Optional<Buyer> buyer = buyerRepository.findById(id);
         if(buyer.isEmpty())
-            return new ResponseEntity<>("Buyer wasn't found!", HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>("Buyer wasn't found!", HttpStatus.NOT_FOUND);
 
         try {
             buyerRepository.deleteById(id);

@@ -26,7 +26,7 @@ public class LaptopsService {
     public ResponseEntity<?> findById(int id){
         Optional<Laptop> laptop = laptopRepository.findById(id);
         if(laptop.isEmpty())
-            return new ResponseEntity<>("Laptop wasn't found!", HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>("Laptop wasn't found!", HttpStatus.NOT_FOUND);
 
         return new ResponseEntity<>(laptop.get(), HttpStatus.OK);
     }
@@ -43,7 +43,7 @@ public class LaptopsService {
     public ResponseEntity<String> updateLaptop(int id, Laptop newLaptop){
         Optional<Laptop> laptop = laptopRepository.findById(id);
         if(laptop.isEmpty())
-            return new ResponseEntity<>("Laptop wasn't found!", HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>("Laptop wasn't found!", HttpStatus.NOT_FOUND);
 
         newLaptop.setId(laptop.get().getId());
         laptopRepository.save(newLaptop);
@@ -53,7 +53,7 @@ public class LaptopsService {
     public ResponseEntity<String> deleteLaptop(int id){
         Optional<Laptop> laptop = laptopRepository.findById(id);
         if(laptop.isEmpty())
-            return new ResponseEntity<>("Laptop wasn't found!", HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>("Laptop wasn't found!", HttpStatus.NOT_FOUND);
 
         try {
             laptopRepository.deleteById(id);

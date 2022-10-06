@@ -43,7 +43,7 @@ public class OrdersService {
         Optional<Laptop> laptop = laptopsRepository.findById(laptopId);
         Optional<Buyer> buyer = buyersRepository.findById(buyerId);
         if(laptop.isEmpty() || buyer.isEmpty())
-            return new ResponseEntity<>("Laptop or Buyer wasn't found!", HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>("Laptop or Buyer wasn't found!", HttpStatus.NOT_FOUND);
 
         Order order = new Order(laptop.get(), buyer.get(), orderDate);
         ordersRepository.save(order);
@@ -55,7 +55,7 @@ public class OrdersService {
         Optional<Laptop> laptop = laptopsRepository.findById(laptopId);
         Optional<Buyer> buyer = buyersRepository.findById(buyerId);
         if(laptop.isEmpty() || buyer.isEmpty())
-            return new ResponseEntity<>("Laptop or Buyer wasn't found!", HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>("Laptop or Buyer wasn't found!", HttpStatus.NOT_FOUND);
 
         Order order = new Order(laptop.get(), buyer.get(), orderDate);
         order.setId(id);
@@ -66,7 +66,7 @@ public class OrdersService {
     public ResponseEntity<String> deleteOrder(int id){
         Optional<Order> order = ordersRepository.findById(id);
         if(order.isEmpty())
-            return new ResponseEntity<>("Order wasn't found!", HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>("Order wasn't found!", HttpStatus.NOT_FOUND);
 
         try{
             ordersRepository.deleteById(id);

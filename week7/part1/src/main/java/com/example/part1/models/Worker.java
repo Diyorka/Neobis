@@ -1,8 +1,8 @@
 package com.example.part1.models;
 
 import lombok.*;
-
 import javax.persistence.*;
+
 
 @Getter
 @Setter
@@ -10,9 +10,10 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "Buyer")
-public class Buyer {
+@Table(name = "Worker")
+public class Worker {
     @Id
+    @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
@@ -24,4 +25,7 @@ public class Buyer {
 
     @Column(name = "phoneNumber")
     private String phoneNumber;
+
+    @Column(name = "position")
+    private String position;
 }
