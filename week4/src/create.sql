@@ -6,7 +6,14 @@ CREATE TABLE Laptop(
       id int AUTO_INCREMENT PRIMARY KEY,
       manufacturer varchar(50) NOT NULL,
       model varchar(50) NOT NULL,
-      price int NOT NULL
+      price int check(price>0) NOT NULL
+);
+
+CREATE TABLE Phone(
+    id int AUTO_INCREMENT PRIMARY KEY,
+    manufacturer varchar(50) NOT NULL,
+    model varchar (50) NOT NULL,
+    price int check(price>0) NOT NULL
 );
 
 CREATE TABLE Buyer(
