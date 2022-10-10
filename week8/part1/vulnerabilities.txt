@@ -1,0 +1,2 @@
+Week 4 contained application.properties file with login and password of my DB,
+I deleted this file and replaced it by application.properties.origin without password etc.
