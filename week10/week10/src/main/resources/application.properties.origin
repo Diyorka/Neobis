@@ -4,8 +4,10 @@ spring.datasource.password=
 
 spring.datasource.driver-class-name=
 spring.jpa.properties.hibernate.dialect=
-spring.jpa.show-sql=
-spring.jpa.hibernate.ddl-auto=
+spring.jpa.show-sql=true
+spring.jpa.hibernate.ddl-auto=update
 
 # For table nonstandard names like 'phoneNumber' etc.
 spring.jpa.hibernate.naming.physical-strategy=org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+jwt_secret=
