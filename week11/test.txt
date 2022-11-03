@@ -1,0 +1,72 @@
+After starting containers:
+
+Write in console:
+- docker exec -it mysql
+- mysql -u root -p
+here you should enter password(1234)
+
+sql query: use MyShop
+sql query: UPDATE Buyer SET Role = 'ROLE_ADMIN' WHERE username = 'your username';
+
+-------------------------------------------
+Testing with Postman
+
+1. Registration, POST method "/auth/registration"
+Send:
+{
+    "firstName":"Diyor",
+    "lastName":"Umurzakov",
+    "phoneNumber":"555777888",
+    "username":"diyorka",
+    "password":"1234"
+}
+Received:
+Response status 200 and JWT token
+-------------------------------------------
+2. Authorization, POST method "/auth/login"
+Send:
+{
+    "username":"diyorka",
+    "password":"1234"
+}
+Received:
+Response status 200 and JWT token
+-------------------------------------------
+3. Getting buyers, GET method "/buyers"
+Received:
+All buyers and response status 200
+-------------------------------------------
+4. Getting laptops, GET method "/laptops"
+Received:
+All laptops and response status 200
+-------------------------------------------
+5. Getting laptops, GET method "/orders"
+Received:
+All orders and response status 200
+-------------------------------------------
+6. Adding new buyer, POST method "/buyers/new"
+Send:
+{
+    "firstName":"Aziz",
+    "lastName":"Solibaev",
+    "phoneNumber":"555352352",
+    "username":"azik",
+    "password":"1234"
+}
+Received:
+Response status 200
+-------------------------------------------
+7. Adding new laptop, POST method "/laptops/new"
+Send:
+{
+    "manufacturer":"Apple",
+    "model":"Macbook Air M1",
+    "price":1000
+}
+Received:
+Response status 200
+-------------------------------------------
+8. Laptop deleting, DELETE method "/laptops/1"
+Received:
+Response status 200
+
