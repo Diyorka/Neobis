@@ -1,7 +1,7 @@
 After starting containers:
 
 Write in console:
-- docker exec -it mysql
+- docker exec -it mysql bash
 - mysql -u root -p
 here you should enter password(1234)
 
