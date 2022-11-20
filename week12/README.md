@@ -1,13 +1,20 @@
-# How to run using Dockerfile
+# Heroku link
 
-1. Go to the path of week11 on terminal
-2. Build an image: `docker build -t myrestapp .`
-3. Set data: `docker run --name mysql -e MYSQL_ROOT_PASSWORD=1234 -e MYSQL_DATABASE=MyShop -e MYSQL_ROOT_PASSWORD=1234 -e MYSQL_PASSWORD=1234 -d mysql:latest`
-4. Run the project: `docker run -d -p 8080:8080 --name myrestapp --link localhost:mysql myrestapp`
-5. Make sure that project was started correctly: `docker logs myrestapp --follow`
+<ul>
+  <li><a href="https://neobisrestapp.herokuapp.com/auth/login">Laptop store</a></li>
+</ul>
 
-# How to run using Docker-compose
-1. Go to the path of week11
-2. Up docker compose: `docker-compose up`
+### Registration and getting jwt token
+ <div align="center"> <img src="Testing/Registration.png" width="90%" /> </div>
 
+### Authorization and getting new JWT Token
+ <div align="center"> <img src="Testing/Authorization.png" width="90%" /> </div>
 
+### GET laptops (with jwt token)
+<div align="center"> <img src="Testing/Get_laptops.png" width="90%" /> </div>
+
+### Laptop Adding
+<div align="center"> <img src="Testing/Adding_laptop.png" width="90%" /> </div>
+
+### Laptop Deleting
+<div align="center"> <img src="Testing/Laptop_deleting.png" width="90%" /> </div>
